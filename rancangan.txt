@@ -1,0 +1,81 @@
+user : pelayan dan kasir
+
+fitur :
+
+- pelayan-
+- login
+- untuk membuat pesanan baru (nomor meja pelanggan,makanan dan minuman yang tersedia dari daftar menu.)
+- memasukan item di daftar menu yang statusnya "Ready"
+- melihat semua daftar pesanan yang masih aktif.
+- menambah/mengurangi/mengubah pesanan yang masih aktif.
+- melihat/mencetak aktifitas pesanan miliknya saja sebagai laporan ke manager
+
+- kasir-
+- login
+- melihat semua daftar pesanan yang masih aktif.
+- menambah/mengurangi/mengubah pesanan yang masih aktif.
+- memproses pembayaran dan menutup pesanan yang masih aktif.
+
+setiap aktivitas direcord
+
+tabel DB
+
+user
+id_user
+username
+password
+nama_user
+status_user enum : pelayan/kasir
+
+kategori
+id_kategori
+nama_kategori
+
+
+menu
+id_menu
+id_kategori
+nama_menu
+harga_menuint
+status_menu vchr
+
+
+
+pesanan 
+id_pesanan
+id_user
+no_pesanan
+no_meja vchar
+nama_pelanggan
+status_pesanan vchar
+total_bayar
+
+detail_pesanan
+id_detail 
+id_pesanan 
+id_menu
+jumlah_beli int
+sub_total int
+
+pembayaran
+id_pembayaran
+id_pesanan int
+total_pembayaran int
+
+aktivitas
+id_aktivitas
+id_user
+waktu_aktivitas datetime
+isi_aktivitas text
+
+--------------------
+model_pesanan
+
+db->insert(pesanan, $inpuatn);
+$aktivitas['id_user'] = "menginput pesanan baru"
+$aktivitas['isi_aktivitas'] = "menginput pesanan baru"
+db->insert
+
+
+
+tampilan awal : daftar menu

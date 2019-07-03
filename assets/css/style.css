@@ -1,0 +1,31 @@
+.login
+{
+	margin-top: 150px;
+	box-shadow: 1px 1px 2px 2px rgba(0,0,0,0.4);
+	border-radius: 4px;
+	padding: 20px;
+	background: rgba(255,255,255,0.5);
+}
+.login-header
+{
+	text-align: center;
+	margin-bottom: 20px;
+}
+.text-header
+{
+	text-align: center;
+}
+.card
+{
+	height: 400px;
+	margin-bottom: 10px;
+}
+.card img
+{
+	height: 250px;
+}
+.card-title
+{
+	font-weight: bold;
+	font-size: 16px;
+}
